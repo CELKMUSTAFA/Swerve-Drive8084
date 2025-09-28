@@ -14,14 +14,14 @@ import edu.wpi.first.wpilibj2.command.SubsystemBase;
 
 
 public class IntakeSubsystem extends SubsystemBase {
-    private final SparkMax motor;
+    private final TalonFX motor;
 
             
         
         
             public IntakeSubsystem() {
                 // 1. Motor tanımla
-                motor = new SparkMax(20, MotorType.kBrushless);
+                motor = new TalonFX(20);
     
     
             // 2. Config nesnesi oluştur
